@@ -1,0 +1,40 @@
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 100vh;
+font-family: Arial, Helvetica, sans-serif;
+background-color: skyblue;
+}
+
+img {
+width: 450px;
+height: 320px;
+}
+
+h1 {
+    font-size: 60px;
+    background-color: rgb(18, 78, 174);
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+button {
+    border: 0;
+    background: none;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    background-color: rgb(18, 78, 174);
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 40px;
+    color: white;
+}

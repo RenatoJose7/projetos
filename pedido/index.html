@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O pedido..</title>
+    <style>
+        body{
+            background: linear-gradient(rgb(212, 20, 212), rgb(103, 5, 80));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        button{
+            background-color: rgb(86, 8, 86);
+            color: white;
+            font-size: 25px;
+            width: 200px;
+            height: 50px;
+            border-radius: 50px;
+            border: none;
+            margin: 20px;
+            transition: 0.3s ease-in-out;
+        }
+        .titulo{
+            text-align: center;
+            color: white;
+        }
+        .botoes{
+            display: flex;
+            justify-content: center;
+        }
+       #botaosim:hover{
+            background-color: rgb(115, 11, 115);
+            font-size: 30px;
+       }
+    </style>
+</head>
+<body>
+    
+    <div class="titulo">
+        <h1>Quer namorar comigo? 😍</h1>
+    </div>
+    <div class="botoes">
+        <div class="botaoSIm">
+            <button id="botaosim" onclick="sim()">SIM</button>
+        </div>
+        <div class="botaoNao">
+            <button id="botaoNao" onclick="nao()" onmouseover="desvia()">Não</button>
+        </div>
+    </div>
+
+
+    <script>
+        
+    function sim() {
+        location.href = "https://youtu.be/aWyjW_N2sB0?si=931-tRYv_etWLZIC&t=38"
+        }
+
+    let botao = document.getElementById("botaoNao")
+    function desvia (){
+    botao.style.position = "absolute"
+    botao.style.bottom = gerarPosicao(10,80)
+    botao.style.left = gerarPosicao(10,80)
+    }
+
+function gerarPosicao(min,max){
+    return (Math.random()*(max-min)+min)+ "%"
+
+}
+
+
+
+    </script>
+</body>
+</html>

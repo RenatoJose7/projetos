@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> 1. Popup de Login</h1>
+    
+    <div id="popup1">
+        <div class="conteudo">
+            <h2>Login</h2>
+            <input type="text" name="" id="usuario" placeholder="Insira seu usuário">
+            <input type="password" id="senha" placeholder="Insira sua senha">
+            <button onclick="entrar()">Entrar</button>
+        </div>
+    </div>
+    <br>
+    <button onclick="abrir()">Abrir</button>
+
+    <br><hr><br>
+
+    <h1>2. Popup de Confirmação</h1>
+    <div id="popup2">
+        <div class="conteudo">
+            <h2>Deseja realmente excluir esse item?</h2>
+            <button onclick="sim()" class="sim">Sim</button>
+            <button onclick="nao()">Não</button>
+        </div>
+    </div>
+    <button onclick="excluir()">Excluir</button>
+
+    <br><hr><br>
+
+    <h1>3. Popup com Imagem</h1>
+
+    <img src="https://embratur.com.br/wp-content/uploads/2022/07/Embratur-Brasil-ultrapassa-marca-de-1-milhao-de-turistas-estrangeiros-recebidos-pela-primeira-vez-desde-2020-1.png" class="imagem-pequena" onclick="abrirImagem()">
+
+    <div id="popup3">
+        <div class="conteudo">
+            <img src="https://embratur.com.br/wp-content/uploads/2022/07/Embratur-Brasil-ultrapassa-marca-de-1-milhao-de-turistas-estrangeiros-recebidos-pela-primeira-vez-desde-2020-1.png" class="imagem-grande">
+            <button onclick="fecharImagem()">Fechar</button>
+        </div>
+    </div>
+
+    <br><hr><br>
+
+    <h1>4. Popup de Curiosidade</h1>
+
+    <div id="popup4">
+        <div class="conteudo">
+            <h2>Curiosidade</h2>
+            <p id="curiosidade"></p>
+            <button onclick="fecharCuriosidade()">Fechar</button>
+        </div>
+    </div>
+
+    <button onclick="mostrarCuriosidade()">Mostrar curiosidade</button>
+
+    <br><hr><br>
+
+    <h1>5. Popup de Aviso</h1>
+
+    <input type="password" id="senhaSecreta" placeholder="Digite a senha secreta">
+    <button onclick="verificarSenha()">Verificar</button>
+
+    <div id="popup5">
+        <div class="conteudo">
+            <h2 id="tituloAviso"></h2>
+            <p id="mensagemAviso"></p>
+            <button onclick="fecharAviso()">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
