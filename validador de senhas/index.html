@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senha</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 <body>
 
     <h1>Validador de senhas</h1>
-
+    <div class="alinhamento">
+    <div class="primeiraSenha">
     <input type="password" id="senha" placeholder="Digite a senha">
-    <button onclick="mostrarSenha()">Mostrar senha</button>
+    <button onclick="mostrarSenha()" class="ver"><i class="fa-regular fa-eye"></i></button>
     <br><br>
-
+    </div>
+          
     <input type="password" name="" id="confirmar" placeholder="Confirme sua senha">
+     </div>
 
+     
     <p id="mensagem"></p>
     <script src="script.js"></script>
 </body>

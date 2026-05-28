@@ -9,7 +9,7 @@ confirmar.addEventListener("input", function(){
     let minusculas = /[a-z]/.test(senha.value)
     let maiusculas = /[A-Z]/.test(senha.value)
     let especial = /[!@#$%&;.]/.test(senha.value)
-    let tamanho = senha.value.length >= 8
+    let tamanho = senha.value.length >= 12
 
 
     if(senha.value == confirmar.value && numero && minusculas && especial && tamanho){
