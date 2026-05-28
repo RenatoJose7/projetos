@@ -1,13 +1,96 @@
+*{
+    margin: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fundo{
+    width: 110%;
+    background-color: black;
+    z-index: -30;
+    display: flex;
+    justify-content: center;
+}
 .carrossel{
-    width: 500px;
+    width: 1000px;
+    height: 500px;
     position: relative;
     overflow: hidden;
     display: block;
+    background-color: black;
+    z-index: 30;
+}
+h1{
+    margin: 24px;
 }
 img{
     width: 100%;
+    height: 100%;
     display: none;
+     object-fit: cover;
+     object-position: top;
 }
 .ativa{
+    display: block;
+}
+.voltar{
+    flex-direction: row;
+}
+button{
+     border: none;
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(6px);
+
+    color: black;
+    font-size: 16px;
+
+    cursor: pointer;
+    background-color: #E2874C;
+    padding: 12px;
+}
+h3{
+    margin: 24px;
+    margin-bottom: 12px;
+}
+
+h5{
+    margin-bottom: 48px;
+}
+
+
+
+
+
+
+
+
+
+.carrossel2{
+    width: 500px;
+    height: 800px;
+
+    position: relative;
+    overflow: hidden;
+
+    background-color: black;
+    border-radius: 20px;
+}
+
+.carrossel2 img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: none;
+}
+
+.carrossel2 .ativa{
     display: block;
 }
