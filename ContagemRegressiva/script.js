@@ -13,6 +13,7 @@ if (slides.length) {
 
 const targetDate = new Date('2028-07-14T00:00:00-07:00');
 const units = {
+  years: document.querySelector('#years'),
   days: document.querySelector('#days'),
   hours: document.querySelector('#hours'),
   minutes: document.querySelector('#minutes'),
@@ -21,10 +22,13 @@ const units = {
 
 function updateCountdown() {
   const totalSeconds = Math.max(0, Math.floor((targetDate - new Date()) / 1000));
-  const days = Math.floor(totalSeconds / 86400);
+  const totalDays = Math.floor(totalSeconds / 86400);
+  const years = Math.floor(totalDays / 365.2425);
+  const days = totalDays - Math.floor(years * 365.2425);
   const hours = Math.floor((totalSeconds % 86400) / 3600);
   const minutes = Math.floor((totalSeconds % 3600) / 60);
   const seconds = totalSeconds % 60;
+  units.years.textContent = String(years).padStart(2, '0');
   units.days.textContent = String(days).padStart(3, '0');
   units.hours.textContent = String(hours).padStart(2, '0');
   units.minutes.textContent = String(minutes).padStart(2, '0');
